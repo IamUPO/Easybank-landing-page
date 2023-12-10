@@ -9,26 +9,27 @@
         <title>New page</title>
         <link href="css/style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap"/>
+        <script defer src="js/script.js"></script>
     </head>
     <body>
         <header class="nav-header">
             <div class="header-container">
                 <nav class="nav-bar">
-                    <a href="" class="brand-logo" data-pg-collapsed><img src="img/logo.svg"/></a>
-                    <ul class="nav-item-container" data-pg-collapsed>
-                        <li class="nav-items" data-pg-collapsed>
+                    <a href="" class="brand-logo"><img src="img/logo.svg"/></a>
+                    <ul class="nav-item-container">
+                        <li class="nav-items">
                             <a href="" class="nav-link">home</a>
                         </li>
-                        <li class="nav-items" data-pg-collapsed>
+                        <li class="nav-items">
                             <a href="" class="nav-link">About</a>
                         </li>
-                        <li class="nav-items" data-pg-collapsed>
+                        <li class="nav-items">
                             <a href="" class="nav-link">Contact</a>
                         </li>
-                        <li class="nav-items" data-pg-collapsed>
+                        <li class="nav-items">
                             <a href="" class="nav-link">Blog</a>
                         </li>
-                        <li class="nav-items" data-pg-collapsed>
+                        <li class="nav-items">
                             <a href="" class="nav-link">Careers</a>
                         </li>
                     </ul>
@@ -195,14 +196,5 @@
                 </div>
             </div>
         </footer>
-
-        <script>
-            const checkbox = document.getElementById('menu-checkbox');
-        
-            checkbox.addEventListener('change', () => {
-              const navItemContainer = document.querySelector('.nav-item-container');
-              navItemContainer.style.display = checkbox.checked ? 'flex' : 'none';
-            });
-          </script>
     </body>
 </html>
