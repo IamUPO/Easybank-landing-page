@@ -124,6 +124,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+
     /* background-image: url('../img/bg-intro-desktop.svg'); */
     background-repeat: no-repeat;
     background-position: right center;
@@ -203,6 +204,17 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.about-info h2 {
+    font-weight: 300;
+    font-size: clamp(18px, 7vw + 1rem, 37px);
+    color: var(--Dark-Blue);
+}
+
+.about-info p {
+    color: var(--Grayis-Blue);
+    line-height: 25px;
 }
 
 .about-cards-container {
@@ -401,9 +413,7 @@ footer {
         width: 558px;
         bottom: -261px;
     }
-    
 }
-
 
 @media (max-width:1050px) {
     .main-container {
@@ -479,7 +489,6 @@ footer {
 }
 
 @media screen and (max-width: 812px){
-
 }
 
 @media screen and (max-width: 580px) {
@@ -517,3 +526,4 @@ footer {
         align-items: center;
     }
 }
+
