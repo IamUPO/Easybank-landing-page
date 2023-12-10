@@ -132,14 +132,29 @@ main {
 
 /* Hero Styling */
 .hero-bg {
+    position: relative;
+
+    /* Add position relative for positioning context */
     background-color: #fafafa;
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
-
-    /* background-image: url('../img/bg-intro-desktop.svg'); */
     background-repeat: no-repeat;
     background-position: right center;
+}
+
+.hero-bg:before {
+    content: '';
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: 0;
+    background-image: url('../img/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .hero-section {
@@ -458,6 +473,10 @@ footer {
         position: relative;
         background-size: contain;
         margin-top: -83px;
+    }
+
+    .hero-bg:before {
+        display: none;
     }
 
     .mockup-img {
