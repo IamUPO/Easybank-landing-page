@@ -133,8 +133,6 @@ main {
 /* Hero Styling */
 .hero-bg {
     position: relative;
-
-    /* Add position relative for positioning context */
     background-color: #fafafa;
     width: 100%;
     max-width: 100%;
@@ -316,8 +314,6 @@ main {
 .blog-card {
     display: flex;
     flex-direction: column;
-
-    /* max-width: 320px; */
     border-radius: 8px;
     overflow: hidden;
     border-style: none;
@@ -434,6 +430,8 @@ footer {
     color: var(--bg-green);
     transition: color 250ms ease-in-out;
 }
+
+/* Screen size change */
 
 @media (max-width:1100px) {
     .mockup-img {
