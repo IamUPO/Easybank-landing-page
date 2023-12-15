@@ -203,7 +203,7 @@ main {
     position: absolute;
     z-index: 2;
     bottom: -428px;
-    right: 0;
+    right: -25px;
     width: 658px;
 }
 
@@ -432,7 +432,6 @@ footer {
 }
 
 /* Screen size change */
-
 @media (max-width:1100px) {
     .mockup-img {
         width: 558px;
